@@ -10,16 +10,7 @@ This repository is our implementation of the paper, Seam-guided Local Alignment 
 
 ### Citation
 ```
-@article{li2018perception,
-  title={Perception-based seam cutting for image stitching},
-  author={Li, Nan and Liao, Tianli and Wang, Chao},
-  journal={Signal, Image and Video Processing},
-  volume={12},
-  number={5},
-  pages={967--974},
-  year={2018},
-  publisher={Springer}
-}
+
 ```
 
 ### Contact
