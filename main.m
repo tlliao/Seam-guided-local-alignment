@@ -2,7 +2,7 @@ clear; clc; close all;
 %% Setup VLFeat toolbox.
 %----------------------
 addNeedingPaths;
-run E:\工作\Work_Computer-Vision\Compt.Vision.Programs\Code_MATLAB_C/vlfeat-0.9.21/toolbox/vl_setup;
+run ../vlfeat-0.9.21/toolbox/vl_setup;
 
 % setup parameters
 % Parameters of SIFT detection
