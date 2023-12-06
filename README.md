@@ -10,7 +10,12 @@ This repository is our implementation of the paper, Seam-guided Local Alignment 
 
 ### Citation
 ```
-
+@article{liao2023seam,
+  title={Seam-guided local alignment and stitching for large parallax images},
+  author={Liao, Tianli and Zhao, Chenyang and Li, Lei and Cao, Heling},
+  journal={arXiv preprint arXiv:2311.18564},
+  year={2023}
+}
 ```
 
 ### Contact
