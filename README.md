@@ -4,9 +4,9 @@ This repository is our implementation of the paper, Seam-guided Local Alignment 
 
 ### Usage
 
-1. Download code, add images in the folder "Imgs" in the main path and run the "main.m".
-
-2. This code has been tested on 64bit Windows; for other platforms, you'll need to compile your own mex files in _maxflow-v3.03.src_ and _SIFTflow_.
+1. Download code, add images in the folder "Imgs" in the main path, add "vlfeat-0.9.21" tool;
+2. Run the "main.m".
+3. This code has been tested on 64bit Windows; for other platforms, you'll need to compile your own mex files in _maxflow-v3.03.src_ and _SIFTflow_.
 
 ### Citation
 ```

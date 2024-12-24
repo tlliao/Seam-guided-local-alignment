@@ -1,4 +1,4 @@
-function [seam_As, seam_Bs] = blendTexture_clean(warped_img1, warped_img2, seam_img1, seam_img2)
+function [seam_As, seam_Bs] = patchSeamEstimation(warped_img1, warped_img2, seam_img1, seam_img2)
 
 
 [ sz1, sz2 ]=size(seam_img1);
@@ -35,7 +35,7 @@ ang_2=warped_img2(:,:,1); sat_2=warped_img2(:,:,2); val_2=warped_img2(:,:,3);
 imgdif = sqrt( ( (ang_1.*C-ang_2.*C).^2 + (sat_1.*C-sat_2.*C).^2 + (val_1.*C-val_2.*C).^2 )./3 );   
 
 % sigmoid-metric difference map
-a_rgb = 0.06; % bin of histogram
+a_rgb = 0.01; % bin of histogram
 beta=4/a_rgb; % beta
 gamma=exp(1); % base number
 para_alpha = histOstu(imgdif(C), a_rgb);  % parameter:tau

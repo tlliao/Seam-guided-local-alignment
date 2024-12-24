@@ -2,7 +2,7 @@ clear; clc; close all;
 %% Setup VLFeat toolbox.
 %----------------------
 addNeedingPaths;
-run ../vlfeat-0.9.21/toolbox/vl_setup;
+run vlfeat-0.9.21/toolbox/vl_setup;
 
 % setup parameters
 % Parameters of SIFT detection
@@ -33,7 +33,9 @@ fprintf('done (%fs)\n', toc);
 
 %% image composition
 fprintf('> seam cutting...');tic;
-[seam_cut] = blendTexture(warped_img1, warped_img2);
+[seam_As, seam_Bs]=seamEstimationInSigmoid(warped_img1, warped_img2);
+[seam_As2, seam_Bs2, warped_img1, warped_img2] = seamImproving(warped_img1, warped_img2, seam_As, seam_Bs);
+[imgout, seam_quality] = seamBlending(warped_img1, warped_img2, seam_As2, seam_Bs2);
 fprintf('done (%fs)\n', toc);
 
 
